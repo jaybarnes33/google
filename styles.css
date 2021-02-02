@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(27, 29, 36);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-wrapper {
+  text-align: center;
+  background-color: white;
+  padding: 8px;
+  width: 500px;
+  border-radius: 30px;
+}
+
+.google-logo {
+  width: 300px;
+}
+
+.search {
+  width: 80%;
+  height: 30px;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.search::-webkit-input-placeholder {
+  font-size: 1.3rem;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.mic,
+.search-icon {
+  width: 20px;
+}
+
+.recents {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recent-item {
+  color: white;
+  text-align: center;
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.recent-item:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.recent-image {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 600px) {
+  .google-logo {
+    width: 200px;
+  }
+
+  .body {
+    align-items: flex-start;
+  }
+
+  .search-wrapper {
+    width: 300px;
+  }
+}
